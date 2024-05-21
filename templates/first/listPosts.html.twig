@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block title %}je test des trucs {% endblock %}
+
+{% block body %}
+
+    {% for r in result %}
+        <ul>
+            <li>{{r.id}}</li>
+            <li>{{r.userId}}</li>
+            <li>{{r.title}}</li>
+            <li>{{r.body}}</li>
+        </ul>
+    {% endfor %}
+
+{% endblock %}

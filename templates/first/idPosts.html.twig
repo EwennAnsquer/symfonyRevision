@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}je test des trucs 2 {% endblock %}
+
+{% block body %}
+
+    {{result.id}}
+    {{result.userId}}
+    {{result.title}}
+    {{result.body}}
+
+    {{ encore_entry_script_tags('app') }}
+
+            
+    <div id="app">
+        <App></App>
+    </div>    
+
+{% endblock %}
